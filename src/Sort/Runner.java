@@ -5,8 +5,8 @@ public class Runner {
     public static void main(String[] args) {
 
         int[] testArr = InPlaceSorts.randIntArr(4);
-        String[] testArr1 = {"Hi", "Bye", "Greetings"};
-        double[] testArr2 = {1.5, 4.21, 2.23};
+        String[] testArr1 = InPlaceSorts.randStringArr(4,4);
+        double[] testArr2 = InPlaceSorts.randDoubleArr((4));
 
         int[] copy = InPlaceSorts.copyIntArray(testArr);
 
