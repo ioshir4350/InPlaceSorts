@@ -9,6 +9,28 @@ public class InPlaceSorts {
             }
             return arr;
         }
+        
+         public static double[] randDoubleArr(int count) {
+        double[] arr = new double[count];
+        for (int i = 0; i < count; i++) {
+            arr[i] = (Math.random() * 10001);
+        }
+        return arr;
+    }
+
+    public static String[] randStringArr(int num, int length) {
+        String[] arr = new String[num];
+        while (num > 0) {
+            String s = "";
+            for (int i = 0; i < length; i++) {
+                char c = (char) ((Math.random() * 26) + 97);
+                s = s + c;
+            }
+            num--;
+            arr[num] = s;
+        }
+        return arr;
+    }
 
         public static void swap(int[] testarr, int i, int j) {
             int x = testarr[i];
